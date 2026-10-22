@@ -1,0 +1,38 @@
+name: "Suggestion / Sugerencia"
+description: "Suggest an improvement / Propón una mejora"
+title: "[Suggestion] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Write in English or Spanish.
+        Issues and attachments are public. Remove personal information from screenshots. Do not include passwords, verification codes, identity documents, payment details, or private account information.
+
+        Busca primero entre los reportes existentes. Escribe en inglés o español.
+        Los reportes y archivos adjuntos son públicos. Elimina los datos personales de las capturas. No incluyas contraseñas, códigos de verificación, documentos de identidad, datos de pago ni información privada de tu cuenta.
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem or need / Problema o necesidad"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Suggested solution / Solución propuesta"
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: "Related page or feature / Página o función relacionada"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional details or images / Detalles o imágenes adicionales"
+      description: "Remove private data before attaching images / Elimina los datos privados antes de adjuntar imágenes"
+    validations:
+      required: false

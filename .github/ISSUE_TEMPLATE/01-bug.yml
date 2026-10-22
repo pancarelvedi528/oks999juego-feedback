@@ -1,0 +1,57 @@
+name: "Bug report / Informar de un problema"
+description: "Report a problem with oks999 juego / Informa de un problema de oks999 juego"
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Write in English or Spanish.
+        Issues and attachments are public. Remove personal information from screenshots. Do not include passwords, verification codes, identity documents, payment details, or private account information.
+
+        Busca primero entre los reportes existentes. Escribe en inglés o español.
+        Los reportes y archivos adjuntos son públicos. Elimina los datos personales de las capturas. No incluyas contraseñas, códigos de verificación, documentos de identidad, datos de pago ni información privada de tu cuenta.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Problem description / Descripción del problema"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / Pasos para reproducirlo"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected result / Resultado esperado"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual result / Resultado obtenido"
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: "Affected page or feature / Página o función afectada"
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: "Device and browser / Dispositivo y navegador"
+      description: "Model, operating system, browser and version, if known / Modelo, sistema operativo, navegador y versión, si los conoces"
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots / Capturas de pantalla"
+      description: "Attach images after removing private data / Adjunta imágenes sin datos privados"
+    validations:
+      required: false
